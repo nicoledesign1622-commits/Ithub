@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex и Grid — карточки</title>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      font-family: Verdana, sans-serif;
+      color: #fff;
+    }
+    h2 {
+      font-family: "Times New Roman", serif;
+      text-align: center;
+      margin-top: 30px;
+      color: #e0e0e0;
+    }
+
+    .flex-wrap {
+      display: flex;
+      justify-content: space-around;
+      margin: 30px 0;
+      padding: 0 20px;
+    }
+    .f-card {
+      width: 130px;
+      height: 130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      font-size: 20px;
+      color: #000;
+    }
+    .f1 { background-color: #ffdf6b; }
+    .f2 { background-color: #ffa3a3; }
+    .f3 { background-color: #9fe8ff; }
+    .f4 { background-color: #b0ffa8; }
+    .f5 { background-color: #d3b3ff; }
+
+    .grid-wrap {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      padding: 20px;
+    }
+    .g-card {
+      height: 140px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+      font-size: 22px;
+      color: #fff;
+    }
+    .gg1 { background-color: #ff6b6b; }
+    .gg2 { background-color: #6b8cff; }
+    .gg3 { background-color: #6bff9c; }
+    .gg4 { background-color: #ffb86b; }
+    .gg5 { background-color: #c76bff; }
+  </style>
+</head>
+<body>
+
+<h2>Flex-блоки</h2>
+<div class="flex-wrap">
+  <div class="f-card f1">I</div>
+  <div class="f-card f2">II</div>
+  <div class="f-card f3">III</div>
+  <div class="f-card f4">IV</div>
+  <div class="f-card f5">V</div>
+</div>
+
+<h2>Grid-блоки</h2>
+<div class="grid-wrap">
+  <div class="g-card gg1">1</div>
+  <div class="g-card gg2">2</div>
+  <div class="g-card gg3">3</div>
+  <div class="g-card gg4">4</div>
+  <div class="g-card gg5">5</div>
+</div>
+
+</body>
+</html>
